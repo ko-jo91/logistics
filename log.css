@@ -1,0 +1,262 @@
+/* always add display: inline-block to anchor tag and span elements */
+/* add boxsizing: border-box to universal container */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+/* use marginn to create white space between nav, hero , features,cta and footer divs */
+/* add container div to center all contents on page */
+/* .container {
+    max-width: ;width: 1200px;
+    width: 100%;
+    margin: 0 auto; */
+/* set image width to 100% after setting max-width */
+/* change margin, font size and padding from px to rem after changing html font size to 62.5% */
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --h1-primary: 6rem;
+    --h2-primary: 3rem;
+    --p-primary: 2rem;
+    --a-primary: 1.7rem;
+    --color-0: #f3d9fa;
+    --color-1: #ffffff;
+    --color-2: #000000;
+    --color-3: #ffc078;  
+    --color-4: #fa5252; 
+    --color-5: #b2f2bb;
+    --color-6: #8a2be2;
+    --color-7: #343a40;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+
+
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;  
+
+
+    
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;
+
+
+}
+  
+a {
+    font-size: var(--a-primary);
+    text-decoration: none;
+    
+
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 11px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.nav {
+    margin-bottom: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 90px;
+    margin-top: 1.5rem;
+    
+    
+}
+
+.main-heading {
+    margin-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight {
+    background-color: var(--color-4);
+    color: var(--color-1);
+    border: 3px #20c997 solid;
+    border-radius: 8px;
+}
+
+.hero-buttons {
+    margin-top: 2.5rem;
+}
+
+.feat-section {
+    margin-bottom: 5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 70px;
+    
+   
+
+}
+
+.heading-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20rem;
+    max-width: 600px;
+    width: 100%;
+    padding: 8rem 8rem;
+    border-radius: 30px;
+    background-color: var(--color-6);
+}
+
+
+.gen {
+    text-align: center;
+}
+
+.send {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.small-text {
+    font-size: 0.5rem;
+}
+
+.btn {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 8px; 
+}
+
+.btn-primary:link, .btn-primary:visited {
+    color: var(--color-1);
+    background-color: #111dc4;
+    border-radius: .8rem; 
+    transition: 0.5s;
+    
+}
+
+.btn-primary:hover, .btn-primary:active {
+    color: var(--color-2);
+    background-color: #20c997;
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 3px 6px 0px var(--color-7);
+        
+}
+
+.btn-secondary:link, .btn-secondary:visited {
+    color: var(--color-2);
+    background-color: rgb(253, 255, 240);
+    border: 2.5px solid rgb(101, 195, 202);
+    border-radius: 3px;
+    transition: 0.5s;
+    
+    
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+    color: var(--color-2);
+    background-color: var(--color-3);
+    border-radius: 3px;
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 3px 6px 0px var(--color-7);
+    
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.chat-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.chat-icon {
+    height: 7px;
+    width: 7px;
+}
+
+
+
+
